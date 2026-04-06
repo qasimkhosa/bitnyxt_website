@@ -1,26 +1,22 @@
-
-document.querySelectorAll('[data-menu-toggle]').forEach((btn) => {
-  btn.addEventListener('click', () => {
-    const panel = document.querySelector('[data-nav-panel]');
-    if (panel) panel.classList.toggle('open');
+const menuToggle = document.querySelector('[data-menu-toggle]');
+const navPanel = document.querySelector('[data-nav-panel]');
+if (menuToggle && navPanel) {
+  menuToggle.addEventListener('click', () => {
+    navPanel.classList.toggle('open');
+    document.body.classList.toggle('menu-open', navPanel.classList.contains('open'));
   });
-});
-
-document.querySelectorAll('form[data-mailto-form]').forEach((form) => {
-  form.addEventListener('submit', (event) => {
-    event.preventDefault();
-    const data = new FormData(form);
-    const fields = Object.fromEntries(data.entries());
-    const subject = encodeURIComponent(`BitNyxt website inquiry: ${fields.service || 'General inquiry'}`);
-    const body = encodeURIComponent([
-      `Name: ${fields.name || ''}`,
-      `Email: ${fields.email || ''}`,
-      `Phone: ${fields.phone || ''}`,
-      `Service: ${fields.service || ''}`,
-      '',
-      'Project details:',
-      `${fields.message || ''}`
-    ].join('\n'));
-    window.location.href = `mailto:admin@bitnyxt.com?subject=${subject}&body=${body}`;
+  navPanel.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      navPanel.classList.remove('open');
+      document.body.classList.remove('menu-open');
+    });
   });
-});
+}
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) entry.target.classList.add('in-view');
+  });
+}, { threshold: 0.12 });
+
+document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
