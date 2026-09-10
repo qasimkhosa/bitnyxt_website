@@ -61,7 +61,7 @@
         <p class="lead">Stop copying phone numbers one at a time. Select your WhatsApp groups, chat contacts or available Business labels, preview the results, and download an organized Excel workbook.</p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="https://chromewebstore.google.com/detail/bulk-wa-contact-extractor/fagaolefppcboofkhfgpmfjfeideilhp?utm_source=bitnyxt&amp;utm_medium=website&amp;utm_campaign=wa_export&amp;utm_content=hero">Add to Chrome</a>
-          <a class="btn btn-secondary" href="contact.html">Support</a>
+          <a class="btn btn-secondary" href="#how-to-export">How it works</a>
         </div>
         <div class="hero-badges">
           <span class="badge">Chrome extension</span>
@@ -70,6 +70,16 @@
         </div>
       </div>
     </section>
+
+    <section class="section section-muted" id="how-to-export"><div class="container">
+      <h2 class="section-title">How to export WhatsApp contacts to Excel</h2>
+      <ol class="detail-list"><li>Install the extension from the Chrome Web Store.</li><li>Open WhatsApp Web and sign in. Refresh the page if it was open during installation.</li><li>Click the extension toolbar icon to open the sidebar.</li><li>Choose Groups, Chat List or Business Labels and select the sources you need.</li><li>Preview the available rows and warnings, then download the XLSX workbook.</li></ol>
+      <p class="lead lead-muted">Free to install. Full export visibility is enabled in the current release without a license key. Available fields still depend on WhatsApp Web.</p>
+      <h3 class="spacer-top">Why are phone numbers missing?</h3><p>Only information made available by WhatsApp Web can be exported. Hidden or unavailable numbers are not guaranteed to be recoverable. Full export access cannot restore information that WhatsApp Web does not provide.</p>
+      <h3 class="spacer-top">Can I use the workbook with my CRM?</h3><p>Check your CRM's accepted formats and field mapping. If it requires CSV, open the relevant worksheet in your spreadsheet application and save that sheet as CSV.</p>
+      <h3 class="spacer-top">Need help with the sidebar?</h3><p>Refresh WhatsApp Web, wait for chats to load, and click the extension icon again. <a href="contact.html">Contact support</a> with your extension version and error text if the problem continues. Do not include private contact lists in public support messages.</p>
+      <p class="spacer-top">Independent BitNyxt extension, not affiliated with WhatsApp or Meta. Export only contacts you have permission to process.</p>
+    </div></section>
 
     <section class="section">
       <div class="container split">
@@ -157,7 +167,7 @@
           </article>
           <article class="legal-card reveal">
             <h2><code>https://api.polar.sh/*</code></h2>
-            <p>Reserved for compatibility with earlier license-related product features. Version 0.2.3 does not require a license key for full export visibility.</p>
+            <p>Reserved for compatibility with earlier license-related product features. The current release does not require a license key for full export visibility.</p>
           </article>
         </div>
       </div>
@@ -172,42 +182,20 @@
           <ul class="detail-list spacer-top">
             <li>Stores local UI and compatibility state</li>
             <li>Generates requested export files locally on the device</li>
-            <li>Does not describe itself as collecting unrelated browsing history or payment card details</li>
+            <li>Export only contacts you have permission to process</li>
           </ul>
         </div>
         <div class="panel reveal">
           <div class="table-like">
             <div class="row"><strong>Runs on</strong><span class="muted">WhatsApp Web only</span></div>
             <div class="row"><strong>Current access</strong><span class="muted">Full export visibility</span></div>
-            <div class="row"><strong>License</strong><span class="muted">No key required in version 0.2.3</span></div>
+            <div class="row"><strong>License</strong><span class="muted">No key required in the current release</span></div>
             <div class="row"><strong>Support</strong><span class="muted"><a href="contact.html">Product support page</a></span></div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container split">
-        <div class="reveal">
-          <div class="eyebrow eyebrow-light"><span class="dot"></span> Security notes</div>
-          <h2 class="section-title">Built with a narrow extension footprint</h2>
-          <ul class="detail-list spacer-top">
-            <li>Manifest V3 architecture</li>
-            <li>No remote code execution path described here</li>
-            <li>No <code>eval</code> or <code>new Function</code> use in the reviewed active source summary</li>
-            <li>Narrow CSP using <code>connect-src 'self' https://api.polar.sh</code></li>
-          </ul>
-        </div>
-        <div class="panel reveal">
-          <div class="table-like">
-            <div class="row"><strong>Version</strong><span class="muted">See the current Chrome Web Store release</span></div>
-            <div class="row"><strong>Build type</strong><span class="muted">Chrome Web Store extension</span></div>
-            <div class="row"><strong>Current flow</strong><span class="muted">Select, preview, export</span></div>
-            <div class="row"><strong>Format</strong><span class="muted">Excel workbook export</span></div>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <section class="section section-primary cta-band">
       <div class="container center reveal">
@@ -222,15 +210,7 @@
     </section>
 
 
-    <section class="section section-muted" id="how-to-export"><div class="container">
-      <h2 class="section-title">How to export WhatsApp contacts to Excel</h2>
-      <ol class="detail-list"><li>Install the extension from the Chrome Web Store.</li><li>Open WhatsApp Web and sign in. Refresh the page if it was open during installation.</li><li>Click the extension toolbar icon to open the sidebar.</li><li>Choose Groups, Chat List or Business Labels and select the sources you need.</li><li>Preview the available rows and warnings, then download the XLSX workbook.</li></ol>
-      <p class="lead lead-muted">Free to install. Full export visibility is enabled in the current release without a license key. Available fields still depend on WhatsApp Web.</p>
-      <h3 class="spacer-top">Why are phone numbers missing?</h3><p>Only information made available by WhatsApp Web can be exported. Hidden or unavailable numbers are not guaranteed to be recoverable. An upgrade does not guarantee missing data will become available.</p>
-      <h3 class="spacer-top">Can I use the workbook with my CRM?</h3><p>Check your CRM's accepted formats and field mapping. If it requires CSV, open the relevant worksheet in your spreadsheet application and save that sheet as CSV.</p>
-      <h3 class="spacer-top">Need help with the sidebar?</h3><p>Refresh WhatsApp Web, wait for chats to load, and click the extension icon again. <a href="contact.html">Contact support</a> with your extension version and error text if the problem continues. Do not post private contact lists or license keys publicly.</p>
-      <p class="spacer-top">Independent BitNyxt extension, not affiliated with WhatsApp or Meta. Export only contacts you have permission to process.</p>
-    </div></section>
+
     <footer class="footer">
       <div class="container footer-grid">
         <div>
