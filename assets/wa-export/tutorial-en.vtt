@@ -1,0 +1,22 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:06.000
+Export group contacts to an Excel workbook. First, install BitNyxt and open WhatsApp Web. This walkthrough starts with the sidebar open.
+
+00:00:06.000 --> 00:00:12.000
+1. Select your group. Choose a group you have permission to use. Keep “Export all groups” off for one group.
+
+00:00:12.000 --> 00:00:16.000
+2. Refresh the preview. Click Refresh Preview to check the available export rows.
+
+00:00:16.000 --> 00:00:22.000
+Check counts and diagnostics. Review rows, worksheets and warnings. Unavailable numbers may remain missing.
+
+00:00:22.000 --> 00:00:27.000
+3. Export Contacts. Return to the export controls and download the XLSX workbook.
+
+00:00:27.000 --> 00:00:32.000
+Review your workbook. Check the Summary and contact sheets before using the data in another tool.
+
+00:00:32.000 --> 00:00:36.000
+Try it with your own group. Get WhatsApp Contacts to Excel — BitNyxt from the Chrome Web Store.
